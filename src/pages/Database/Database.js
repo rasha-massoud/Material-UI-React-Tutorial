@@ -1,8 +1,10 @@
+import { Grid } from "@mui/material";
+
 function Database() {
     return (
-        <div>
+        <Grid item xs={8}>
             This is the Database Page.
-        </div>
+        </Grid>
     )
 }
 
