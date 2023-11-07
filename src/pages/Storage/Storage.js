@@ -1,8 +1,10 @@
+import { Grid } from "@mui/material";
+
 function Storage() {
     return (
-        <div>
+        <Grid item xs={8}>
             This is the Storage Page.
-        </div>
+        </Grid>
     )
 }
 
