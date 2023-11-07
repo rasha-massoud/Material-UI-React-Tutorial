@@ -1,8 +1,10 @@
+import { Grid } from "@mui/material";
+
 function MachineLearning() {
     return (
-        <div>
+        <Grid item xs={8}>
             This is the Machine Learning Page.
-        </div>
+        </Grid>
     )
 }
 
