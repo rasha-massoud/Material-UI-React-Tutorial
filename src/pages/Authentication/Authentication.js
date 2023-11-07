@@ -1,4 +1,4 @@
-const Authenticattion = () => {
+const Authentication = () => {
     return (
         <div>
             This is the Authentication Page.
@@ -6,4 +6,4 @@ const Authenticattion = () => {
     )
 }
 
-export default Authenticattion;
+export default Authentication;
