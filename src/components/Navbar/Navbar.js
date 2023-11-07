@@ -9,10 +9,12 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { mainNavbarItems } from './consts/navbarItems';
 import { navbarStyles } from './styles';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
 
-    const drawerWidth = 220;
+    const navigate = useNavigate();
+
     return (
         <Drawer
             sx={navbarStyles.drawer}
@@ -26,6 +28,7 @@ const Navbar = () => {
                     <ListItem  
                         key={item.id} 
                         disablePadding
+                        onClick={() => navigate(item.route)}
                     >
                         <ListItemButton>
                             <ListItemIcon sx={navbarStyles.icons} >
