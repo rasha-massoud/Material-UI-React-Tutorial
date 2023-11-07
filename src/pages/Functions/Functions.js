@@ -1,8 +1,10 @@
+import { Grid } from "@mui/material";
+
 function Functions() {
     return (
-        <div>
+        <Grid item xs={8}>
             This is the Functions Page.
-        </div>
+        </Grid>
     )
 }
 
