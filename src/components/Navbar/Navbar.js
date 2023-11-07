@@ -7,23 +7,15 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import { mainNavbarItems } from './consts/navbarItems';
+import { navbarStyles } from './styles';
 
 const Navbar = () => {
 
     const drawerWidth = 220;
     return (
         <Drawer
-            sx={{
-                width: drawerWidth,
-                flexShrink: 0,
-                '& .MuiDrawer-paper': {
-                    width: drawerWidth,
-                    boxSizing: 'border-box',
-                },
-            }}
+            sx={navbarStyles.drawer}
             variant="permanent"
             anchor="left"
         >
@@ -36,10 +28,13 @@ const Navbar = () => {
                         disablePadding
                     >
                         <ListItemButton>
-                            <ListItemIcon>
+                            <ListItemIcon sx={navbarStyles.icons} >
                                 {item.icon}
                             </ListItemIcon>
-                            <ListItemText primary={item.label} />
+                            <ListItemText 
+                                sx={navbarStyles.text}
+                                primary={item.label} 
+                            />
                         </ListItemButton>
                     </ListItem>
                 ))}
