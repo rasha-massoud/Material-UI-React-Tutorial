@@ -1,8 +1,10 @@
+import { Grid } from "@mui/material";
+
 function Hosting() {
     return (
-        <div>
+        <Grid item xs={8}>
             This is the Hosting Page.
-        </div>
+        </Grid>
     )
 }
 
