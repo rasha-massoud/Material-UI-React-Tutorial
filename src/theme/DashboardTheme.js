@@ -1,6 +1,6 @@
 import { createTheme } from "@mui/material/styles"; 
 
-export const DashboardTheme = createTheme({
+const DashboardTheme = createTheme({
     components: {
         MuiButton: {
             styleOverrides: {
@@ -11,3 +11,5 @@ export const DashboardTheme = createTheme({
         }
     }   
 });
+
+export default DashboardTheme;
