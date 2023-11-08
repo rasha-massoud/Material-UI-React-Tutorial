@@ -5,10 +5,13 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Tooltip from '@mui/material/Tooltip';
 import HelpIcon from '@mui/icons-material/Help';
+import Box from '@mui/material/Box';
+import { headerStyles } from './styles';
 
 const Header = ({ title }) => {
+
     return (
-        <div>
+        <Box sx={headerStyles.wrapper}>
             <div>
                 <CommonButton variant='default'>
                     Go to docs
@@ -34,7 +37,7 @@ const Header = ({ title }) => {
                     </IconButton>
                 </Tooltip>
             </div>
-        </div>
+        </Box>
     )
 }
 
