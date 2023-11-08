@@ -1,5 +1,5 @@
-import { Menu } from "@mui/material/Menu";
-import { MenuItem } from "@mui/material/MenuItem";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
 
 const BasicMenu = ({ anchorEl, handleClose, open, menuItems }) => {
     return (
