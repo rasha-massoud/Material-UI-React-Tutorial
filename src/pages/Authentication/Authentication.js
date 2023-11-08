@@ -8,7 +8,7 @@ const Authentication = () => {
     return (
         <Grid item xs={8}>
 
-            <NotificationBell iconColor='primary' badgeContent='4'/>
+            <NotificationBell iconColor='primary' badgeContent={0}/>
             This is the Authentication Page.
             <CommonButton 
                 variant='outlined'
