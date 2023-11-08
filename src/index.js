@@ -11,10 +11,11 @@ import Hosting from './pages/Hosting/Hosting';
 import MachineLearning from './pages/MachineLearning/MachineLearning';
 import Storage from './pages/Storage/Storage';
 import { ThemeProvider } from '@emotion/react';
+import { DashboardTheme } from './theme/dashboardTheme';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <ThemeProvider>
+  <ThemeProvider theme={DashboardTheme}>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} >
