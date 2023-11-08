@@ -1,8 +1,7 @@
 import { Grid } from "@mui/material";
 import { buttonStyles } from "./styles";
 import CommonButton from '../../components/CommonButton/CommonButton';
-import NotificationBell from "../../components/NotificationBell/NotificationBell";
-import Avatar from '@mui/material/Avatar';
+import Header from "../../components/Header/Header";
 
 const Authentication = () => {
 
@@ -10,18 +9,7 @@ const Authentication = () => {
         <Grid item xs={8}>
             This is the Authentication Page.
 
-            <CommonButton variant='default'>
-                Go to docs
-            </CommonButton>
-
-            <NotificationBell 
-                iconColor='primary' 
-            />
-
-            <Avatar 
-                src='https://mui.com/static/images/avatar/1.jpg' 
-                alt='Profile Picture'
-            />
+            <Header />
             
             <CommonButton 
                 variant='outlined'
