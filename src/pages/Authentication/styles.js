@@ -15,5 +15,13 @@ export const buttonStyles = {
         '&:hover': {
             backgroundColor: 'transparent',
         }
-    }
+    },
+    '&.MuiButton-default': {
+        fontWeight: 500,
+        color: 'rgba(255, 255, 255, 0.7)',
+        borderColor: '#fff',
+        '&:hover': {
+            backgroundColor: 'transparent',
+        }
+    },
 };
