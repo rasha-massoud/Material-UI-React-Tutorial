@@ -31,13 +31,13 @@ const Header = ({ title }) => {
 
             <Stack direction='row' spacing={2} style={headerStyles.second1Row}>
                 <Typography
+                    sx={headerStyles.second1Row}
                     variant='h3'
-                    color='white'
                 >
                     {title}
                 </Typography>
                 
-                <div style={headerStyles.second2Row}>
+                <Stack direction='row' spacing={1} style={headerStyles.second2Row}>
                     <CommonButton 
                         variant='outlined' 
                         color='white'
@@ -51,7 +51,7 @@ const Header = ({ title }) => {
                             <HelpIcon color='white'/>
                         </IconButton>
                     </Tooltip>
-                </div>
+                </Stack>
             </Stack>
         </div>
     )
