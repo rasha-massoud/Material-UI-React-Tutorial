@@ -19,18 +19,23 @@ const Header = ({ title }) => {
                 </CommonButton>
 
                 <NotificationBell 
-                    iconColor='primary' 
+                    iconColor='white' 
                 />
 
                 <Avatar 
                     src='https://mui.com/static/images/avatar/1.jpg' 
                     alt='Profile Picture'
-                    sx={{ width: 35, height: 35 }}
+                    sx={{ width: 32, height: 32 }}
                 />
             </Stack>
 
             <div style={headerStyles.secondRow}>
-                <Typography>{title}</Typography>
+                <Typography
+                    variant='h3'
+                    color='white'
+                >
+                    {title}
+                </Typography>
                 <CommonButton variant='outlined'>Web Setup</CommonButton>
                 
                 <Tooltip title='Help'>
