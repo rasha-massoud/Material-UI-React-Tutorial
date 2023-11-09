@@ -5,14 +5,13 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Tooltip from '@mui/material/Tooltip';
 import HelpIcon from '@mui/icons-material/Help';
-import Box from '@mui/material/Box';
 import { headerStyles } from './styles';
 
 const Header = ({ title }) => {
 
     return (
-        <Box sx={headerStyles.wrapper}>
-            <div>
+        <div style={headerStyles.wrapper}>
+            <div style={headerStyles.firstRow}>
                 <CommonButton variant='default'>
                     Go to docs
                 </CommonButton>
@@ -27,7 +26,7 @@ const Header = ({ title }) => {
                 />
             </div>
 
-            <div>
+            <div style={headerStyles.secondRow}>
                 <Typography>{title}</Typography>
                 <CommonButton variant='outlined'>Web Setup</CommonButton>
                 
@@ -37,7 +36,7 @@ const Header = ({ title }) => {
                     </IconButton>
                 </Tooltip>
             </div>
-        </Box>
+        </div>
     )
 }
 
