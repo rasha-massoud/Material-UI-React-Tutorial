@@ -13,7 +13,7 @@ const Header = ({ title }) => {
 
     return (
         <div style={headerStyles.wrapper}>
-            <Stack direction="row" spacing={2} style={headerStyles.firstRow}>
+            <Stack direction='row' spacing={2} style={headerStyles.firstRow}>
                 <CommonButton variant='default' sx={buttonStyles}>
                     Go to docs
                 </CommonButton>
@@ -29,21 +29,30 @@ const Header = ({ title }) => {
                 />
             </Stack>
 
-            <div style={headerStyles.secondRow}>
+            <Stack direction='row' spacing={2} style={headerStyles.second1Row}>
                 <Typography
                     variant='h3'
                     color='white'
                 >
                     {title}
                 </Typography>
-                <CommonButton variant='outlined'>Web Setup</CommonButton>
                 
-                <Tooltip title='Help'>
-                    <IconButton>
-                        <HelpIcon />
-                    </IconButton>
-                </Tooltip>
-            </div>
+                <div style={headerStyles.second2Row}>
+                    <CommonButton 
+                        variant='outlined' 
+                        color='white'
+                        size='small'
+                    >
+                        Web Setup
+                    </CommonButton>
+                    
+                    <Tooltip title='Help'>
+                        <IconButton>
+                            <HelpIcon color='white'/>
+                        </IconButton>
+                    </Tooltip>
+                </div>
+            </Stack>
         </div>
     )
 }
