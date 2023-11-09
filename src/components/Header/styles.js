@@ -9,10 +9,9 @@ export const headerStyles = {
         justifyContent: 'flex-end',
     },
     secondRow: {
-        width: '100%',
         display: 'flex',
         alignItems:'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     second1Row: {
         flex: 6,
