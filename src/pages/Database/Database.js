@@ -1,10 +1,8 @@
-import { Grid } from "@mui/material";
-
 function Database() {
     return (
-        <Grid item xs={8}>
+        <div style={{ marginLeft:320}}>
             This is the Database Page.
-        </Grid>
+        </div>
     )
 }
 

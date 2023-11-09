@@ -1,4 +1,3 @@
-import { Grid } from "@mui/material";
 import { buttonStyles } from "./styles";
 import CommonButton from '../../components/CommonButton/CommonButton';
 import Header from "../../components/Header/Header";
@@ -6,8 +5,7 @@ import Header from "../../components/Header/Header";
 const Authentication = () => {
 
     return (
-        <Grid item xs={8}>
-
+        <div style={{ marginLeft:320}}>
             <Header title='Authentication'/>
             
             <CommonButton 
@@ -22,7 +20,7 @@ const Authentication = () => {
             >
                 Add User 
             </CommonButton>
-        </Grid>
+        </div>
     )
 }
 
