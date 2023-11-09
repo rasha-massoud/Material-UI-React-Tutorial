@@ -5,14 +5,16 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Tooltip from '@mui/material/Tooltip';
 import HelpIcon from '@mui/icons-material/Help';
+import Stack from '@mui/material/Stack';
 import { headerStyles } from './styles';
+import { buttonStyles } from '../../pages/Authentication/styles';
 
 const Header = ({ title }) => {
 
     return (
         <div style={headerStyles.wrapper}>
-            <div style={headerStyles.firstRow}>
-                <CommonButton variant='default'>
+            <Stack direction="row" spacing={2} style={headerStyles.firstRow}>
+                <CommonButton variant='default' sx={buttonStyles}>
                     Go to docs
                 </CommonButton>
 
@@ -23,8 +25,9 @@ const Header = ({ title }) => {
                 <Avatar 
                     src='https://mui.com/static/images/avatar/1.jpg' 
                     alt='Profile Picture'
+                    sx={{ width: 35, height: 35 }}
                 />
-            </div>
+            </Stack>
 
             <div style={headerStyles.secondRow}>
                 <Typography>{title}</Typography>
