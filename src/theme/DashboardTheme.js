@@ -6,6 +6,14 @@ const dashboardTheme = createTheme({
             main: 'rgba(255,255,255,1)',
         }
     },
+    typography: {
+        h1: {
+            fontSize: '1.6rem',
+            fontWeight: 600,
+            color: '#fff',
+            letterSpacing: '0.5px',
+        }
+    },
     components: {
         MuiButton: {
             styleOverrides: {
@@ -14,7 +22,7 @@ const dashboardTheme = createTheme({
                 }
             }
         }
-    }
+    },
 });
 
 export default dashboardTheme;
