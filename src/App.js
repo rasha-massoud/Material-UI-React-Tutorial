@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <div container>
+    <div>
       <Navbar />
       <Outlet />
     </div>
