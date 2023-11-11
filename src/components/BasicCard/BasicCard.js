@@ -8,7 +8,14 @@ const BasicCard = ({ header, content }) => {
         <Card>
             {header}
             <CardContent>
-                <Typography style={basicCardStyles.Typography}>
+                <Typography 
+                    align='center' 
+                    sx={{ 
+                        margin: '40px 16px', 
+                        color: 'rgba(0,0,0,0.6)', 
+                        fontSize: '1.3rem'
+                    }}
+                >
                     {content}
                 </Typography>
             </CardContent>
