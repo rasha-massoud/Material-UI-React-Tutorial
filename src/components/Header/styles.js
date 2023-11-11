@@ -3,6 +3,8 @@ export const headerStyles = {
         backgroundColor: '#009be5',
         display: 'flex',
         flexDirection: 'column',
+        paddingTop: 10,
+        paddingBottom: 10,
     },
     firstRow: {
         marginRight: 20, 
