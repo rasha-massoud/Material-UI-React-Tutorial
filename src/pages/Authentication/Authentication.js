@@ -20,6 +20,7 @@ const Authentication = () => {
                         onChange={(event) => handleChange(event.target.value)}
                     />
                 }
+                content={'No users for this project yet.'}
             />
         </div>
     )
