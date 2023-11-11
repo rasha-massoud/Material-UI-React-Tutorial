@@ -1,25 +1,26 @@
 import { buttonStyles } from "./styles";
 import CommonButton from '../../components/CommonButton/CommonButton';
 import Header from "../../components/Header/Header";
+import BasicCard from "../../components/BasicCard/BasicCard";
+import SearchBar from "../../components/SearchBar/SearchBar";
 
 const Authentication = () => {
 
+    const handleChange = (value) => {
+        console.log(value);
+    }
+    
     return (
         <div style={{ marginLeft:320}}>
             <Header title='Authentication'/>
-            
-            <CommonButton 
-                variant='outlined'
-                sx={buttonStyles}
-            >
-                Web Setup 
-            </CommonButton>
-            <CommonButton 
-                variant='contained'
-                sx={buttonStyles}
-            >
-                Add User 
-            </CommonButton>
+            <BasicCard 
+                header={
+                    <SearchBar 
+                        placeholder={'Search by email address, phone number, or user ID'} 
+                        onChange={(event) => handleChange(event.target.value)}
+                    />
+                }
+            />
         </div>
     )
 }
