@@ -1,5 +1,3 @@
-import { buttonStyles } from "./styles";
-import CommonButton from '../../components/CommonButton/CommonButton';
 import Header from "../../components/Header/Header";
 import BasicCard from "../../components/BasicCard/BasicCard";
 import SearchBar from "../../components/SearchBar/SearchBar";
