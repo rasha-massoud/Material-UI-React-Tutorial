@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent';
 
 const BasicCard = ({ header, content }) => {
     return (
-        <Card>
+        <Card sx={{ margin: '20px 30px'}} >
             {header}
             <CardContent>
                 <Typography 
