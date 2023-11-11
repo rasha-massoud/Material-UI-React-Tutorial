@@ -12,7 +12,7 @@ const SearchBar = ({ placeholder, onChange }) => {
                 <SearchIcon />
             </IconButton>
             <Input 
-                paceholder={placeholder} 
+                placeholder={placeholder} 
                 onChange={onChange}
             />
             <CommonButton 
