@@ -6,7 +6,7 @@ import CommonButton from '../CommonButton/CommonButton';
 import { buttonStyles } from '../../pages/Authentication/styles';
 import { searchBarStyles } from './styles';
 
-const SearchBar = ({ placeholder, onChange }) => {
+const SearchBar = ({ placeholder, onChange, onClick }) => {
     return (
         <div style={searchBarStyles.wrapper}>
             <div style={searchBarStyles.leftPart}>
@@ -24,6 +24,7 @@ const SearchBar = ({ placeholder, onChange }) => {
                 <CommonButton 
                     variant='contained'
                     sx={buttonStyles}
+                    onClick={onClick}
                 >
                     Add User 
                 </CommonButton>
