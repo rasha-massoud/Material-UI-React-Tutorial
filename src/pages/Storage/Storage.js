@@ -3,6 +3,7 @@ import Header from "../../components/Header/Header";
 import BasicSnapBar from "../../components/BasicSnapBar/BasicSnapBar";
 import CommonButton from "../../components/CommonButton/CommonButton";
 import { storageStyles } from './styles';
+import Loading from "../../components/Loading/Loading";
 
 function Storage() {
     const [open, setOpen] = useState(false);
@@ -26,13 +27,15 @@ function Storage() {
     return (
         <div style={{ marginLeft:320}}>
             <Header title='Storage'/>
-            <CommonButton 
-                sx={storageStyles.button}
-                variant="contained" 
-                onClick={handleClick}
-            >
-                {ButtonText}
-            </CommonButton>
+            <Loading>
+                <CommonButton 
+                    sx={storageStyles.button}
+                    variant="contained" 
+                    onClick={handleClick}
+                >
+                    {ButtonText}
+                </CommonButton>
+            </Loading>
 
             <BasicSnapBar 
                 open={open}
