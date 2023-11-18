@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Header from "../../components/Header/Header";
 import BasicSnapBar from "../../components/BasicSnapBar/BasicSnapBar";
 import BasicCard from "../../components/BasicCard/BasicCard";
 import UserTable from "../../components/UserTable/UserTable";
 
-function Storage() {
+const Storage = () => {
     const [open, setOpen] = useState(false);
 
     const handleClose = (event, reason) => {
