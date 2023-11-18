@@ -24,4 +24,7 @@ export const buttonStyles = {
             backgroundColor: 'transparent',
         }
     },
+    '&.MuiButton-disabled': {
+        backgroundColor: 'rgba(0, 0, 0, 0.12)',
+    }
 };
