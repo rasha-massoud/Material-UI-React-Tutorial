@@ -1,11 +1,11 @@
 import Header from "../../components/Header/Header";
+import BasicCard from "../../components/BasicCard/BasicCard";
 
 function Database() {
     return (
         <div style={{ marginLeft:320}}>
             <Header title='Database'/>
-
-            This is the Database Page.
+            <BasicCard />
         </div>
     )
 }
